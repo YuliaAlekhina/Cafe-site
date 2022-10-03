@@ -1,0 +1,265 @@
+doctype html 
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Кафе
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;500;700&display=swap" rel="stylesheet")
+        link(rel="icon" href="../Favicon.png" type="image/x-icon")
+        link(href="https://allfont.ru/allfont.css?fonts=josefin-sans" rel="stylesheet" type="text/css")
+
+
+
+        style
+            include styles/smartbasket.min.css
+            include styles/main.css
+    body
+        div.wrapper
+            include modules/header
+            section.welcome
+                div.welcome__body.container
+                    .welcome__info
+                        h1.welcome__title Welcome to <br> Restaurant
+                        p.welcome__text The people, food and the prime locations make the perfect place good friends & family to come together and have great time.
+                        a(href="menu.html").welcome__button.button View Menu
+                    .welcome__image
+                        img(src="../img/welcome/fon.jpg", alt="")
+
+            section.working-time.work_time
+                div.working-time__body.container
+                    .working-time__block.locate
+                        h4.working-time__title Locate Us
+                        p.working-time__text Riverside 25, San Diego, California
+                    .working-time__block.hour
+                        h4.working-time__title Open Hours
+                        p.working-time__text Mon To Fri 9:00 AM - 9:00 PM
+                    .working-time__block.reservation 
+                        h4.working-time__title Reservation
+                        p.working-time__text restauran@gmail.com
+
+            section.story
+                div.story__body.container
+                    .story__image 
+                        img(src="../img/story/image.jpg", alt="Картинка")
+                    .story__info 
+                        h3.story__title The Delicious Story
+                        p.story__text The people, food and the prime locations make the perfect place for the friends & family to come together and have great time.
+                        .story__year.year
+                            .year_2018
+                                h3.story__title.title-year 2018
+                                p.story__text-year Plan for this restaurant to deliver healthy food.
+                            .year_2022 
+                                h3.story__title.title-year 2022
+                                p.story__text-year Happily in the fourth year by fulfill the motto.
+                        p.story__name JOSEFINE
+                        .story__signature
+                            img(src="../img/story/signature.png", alt="Подпись")
+
+            section.menu-food.container
+                div.menu-food__title Menu
+                div.menu-food__body
+                    div.dishes
+                        .dishes__info
+                            div.dishes__title Try our special dishes
+                            p.dishes__text Every time you perfectly dine with us, it should happy for great inspired food in an environment designed with individual touches unique to the local area.
+                            div.dishes__image
+                                img(src="../img/menu-food/menu-food.jpg", alt="Картинка")
+                        div.dishes__button
+                            a(href="menu.html").button See all dishes
+                    div.menu-dishes
+                        div.starters-dishes
+                            h2.starters-dishes__title.dishes__title Starters
+                            div.starters__first.starters
+                                h4.starters-first__title Raw Scallops from Erquy
+                                p.starters-first__text Shuck the scallop to that used for oysters
+                                p.starters-first__price $40
+                            div.starters__second.starters
+                                h4.starters-first__title Spring Roll
+                                p.starters-first__text Add oil to a hot pan spring onion whites
+                                p.starters-first__price $20
+                            div.starters__third.starters
+                                h4.starters-first__title French Onion Soup
+                                p.starters-first__text Wheat flour, apple cider vinegar, bread
+                                p.starters-first__price $25
+                            div.starters__four.starters
+                                h4.starters-first__title Tomato Bruschetta
+                                p.starters-first__text Bread, olive oil, garlic, black pepper
+                                p.starters-first__price $30
+
+                        
+
+                        div.main-dishes
+                            h2.main-dishes__title.dishes__title Main Dish
+                            div.main__first.main-dish
+                                h4.main-first__title Grilled Salmon with Dill Sauce
+                                p.main-first__text Brown sugar, salmon fillet, Dijon mustard
+                                p.main-first__price $40
+                            div.main__second.main-dish
+                                h4.main-first__title Roast Beef with Vegetable
+                                p.main-first__text Green beans, rib eye, olive oil, beef
+                                p.main-first__price $20
+                            div.main__third.main-dish
+                                h4.main-first__title Marrkesh Vegetetarian Curruy
+                                p.main-first__text Sweet potato, eggplant, garbanzo bean
+                                p.main-first__price $25
+                            div.main__four.main-dish
+                                h4.main-first__title Spicy Vegan Potato Curry
+                                p.main-first__text Coconut milk, beans, potatoes, curry powder
+                                p.main-first__price $35
+
+
+
+                        div.dessert-dishes
+                            h2.dessert-dishes__title.dishes__title Dessert
+                            div.dessert__first.dessert
+                                h4.dessert-first__title Apple Pie with Cream
+                                p.dessert-first__text Whipping cream, egg white, cinnamon
+                                p.dessert-first__price $15
+                            div.dessert__second.dessert
+                                h4.dessert-first__title Lemon Meringue Pie
+                                p.dessert-first__text Frozen pie crust, meringue, lemon
+                                p.dessert-first__price $30
+
+            section.image
+                img(src="../img/menu-food/img.jpg", alt="Картинка")
+
+            section.offers.container
+                div.offers__title Offers
+                h3.offers__title-title Our Offer dishes
+                p.offers__text Our chefs create melt-in-your-mouth dishes that'll satiate even the fussiest eaters now <br> the dishes are in offers use it based on hunger.
+                div.advertising
+                    div.advertising__burger
+                        div.advertising__img
+                            img(src="../img/advertising/burger.png", alt="Бургер")
+                        div.advertising__image.image__burger
+                            img(src="../img/advertising/fon-1.jpg", alt="Фон-1")
+                        div.advertising__discount
+                            div.advertising__price $10
+                            div.fon-discount
+                                img(src="../img/advertising/fon-discount-1.png", alt="")
+                        div.advertising__info
+                            p.advertising__percent 50% Offer Going
+                            h4.advertising__title Chicken Burger
+                            p.advertising__text Chicken burger with the <br> tasty toppings and leaves.
+                    div.advertising__pizza
+                        div.advertising__img
+                            img(src="../img/advertising/pizza.png", alt="Пицца")
+                        div.advertising__image.image__burger
+                            img(src="../img/advertising/fon-2.jpg", alt="Фон-2")
+                        div.advertising__discount
+                            div.advertising__price-pizza $9
+                            div.fon-discount
+                                img(src="../img/advertising/fon-discount-2.png", alt="")
+                        div.advertising__info
+                            p.advertising__percent 50% Offer Going
+                            h4.advertising__title Chicken Pizza
+                            p.advertising__text Pizza with multiple flavor <br> and the toping are mixed.
+
+            section.popular-dishes.container
+                div.popular-dishes__title Menu
+                h3.popular-dishes__title-title Popular Dishes
+                p.popular-dishes__text There is a game between the waiters in restaurant to see who serves the food to <br> each table fastest. That led to attempting the Guinness Record.
+                div.popular-dishes__body
+                    .popular-dishes__block.block-first
+                        .popular-dishes__image
+                            img(src="../img/popular-dishes/popular-dishes-1.jpg", alt="Макароны")
+                        div.popular-dishes__block-item
+                            .popular-dishes__block-title Chicken Manjoori
+                            .popular-dishes__block-price $15
+                        p.popular-dishes__block-text Dish relished by all age groups as a starter dish at parties.
+                    .popular-dishes__block.block-first
+                        .popular-dishes__image
+                            img(src="../img/popular-dishes/popular-dishes-2.jpg", alt="Хотдог")
+                        div.popular-dishes__block-item
+                            .popular-dishes__block-title Hotdog
+                            .popular-dishes__block-price $10
+                        p.popular-dishes__block-text Grilled sausage served in the slit of a partially sliced bun.
+
+
+
+
+
+
+                    .popular-dishes__block.block-first
+                        .popular-dishes__image
+                            img(src="../img/popular-dishes/popular-dishes-3.jpg", alt="Сок")
+                        div.popular-dishes__block-item
+                            .popular-dishes__block-title Fresh Salmon
+                            .popular-dishes__block-price $5
+                        p.popular-dishes__block-text Beat the health blues with our Super Immune Blue Juice Recipe.
+
+
+
+
+                    .popular-dishes__block.block-first
+                        .popular-dishes__image
+                            img(src="../img/popular-dishes/popular-dishes-4.jpg", alt="Бургер")
+                        div.popular-dishes__block-item
+                            .popular-dishes__block-title Veg Burger
+                            .popular-dishes__block-price $10
+                        p.popular-dishes__block-text Burgers may be made from ingredients like beans.
+                div.dishes__button.popular-dishes__button
+                    a(href="#").button See all dishes
+
+            section.great-services
+                div.great-services__body.container
+                    div.great-services__block-info
+                        div.great-services__block-info_item What we offer
+                        h3.great-services__block-info_title Our Great Services
+                        p.great-services__block-info_text The atmosphere set the stage. It’s about more than just a dining room away from your home. food takes the spotlight as guests.
+                    div.great-services__block
+                        .great-services__block-column
+                            div.great-services__block-first
+                                .great-services__block-image
+                                    img(src="../img/great-services/great-services-1.png", alt="Календарь")
+                                h6.great-services__block-text Opened 24/7
+                        .great-services__block-column
+                            div.great-services__block-first
+                                .great-services__block-image
+                                    img(src="../img/great-services/great-services-2.png", alt="Календарь")
+                                h6.great-services__block-text Special Menus
+                        .great-services__block-column
+                            div.great-services__block-first
+                                .great-services__block-image
+                                    img(src="../img/great-services/great-services-3.png", alt="Календарь")
+                                h6.great-services__block-text Home Delivery
+
+            section.blog.container
+                div.popular-dishes__title Blog
+                h3.popular-dishes__title-title Be First Who Read News
+                p.popular-dishes__text Explore the latest stories about our dishes, offers, <br> events and future plans here.
+                div.blog__block
+                    div.blog__block-first
+                        div.blog__block-first-effect
+                            div.blog__block-image
+                                img(src="../img/blog/blog-1.jpg", alt="1 картинка")
+                            div.overlay
+                            div.blog__button
+                                a(href="#").blog__block-button View More
+                        div.blog__block-info
+                            div.blog__block-title Delicious
+                            h3.blog__block-title-title The Legend of US Cuisine: The Story of Hungry People
+                            p.blog__block-text Capitalize on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality.
+                    div.blog__block-second
+                        div.blog__block-first-effect
+                            div.blog__block-image
+                                img(src="../img/blog/blog-2.jpg", alt="2 картинка")
+                            div.overlay
+                            div.blog__button
+                                a(href="#").blog__block-button View More
+                        div.blog__block-info
+                            div.blog__block-title Cooking
+                            h3.blog__block-title-title The Most Popular Delicious Food of Mediterranean Cuisine
+                            p.blog__block-text Strategies on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality.
+
+            div.smart-basket__wrapper
+            include modules/footer
+            
+        script(src="../js/jquery-3.6.0.min.js")
+        script(src="../smartbasket/js/smartbasket.min.js")
+        script(src="../js/owl.carousel.min.js")
+        script(src="../js/main.js")
